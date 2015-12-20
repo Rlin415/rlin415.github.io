@@ -58,6 +58,7 @@ var stackMethods = {
   }
 }
 ```
+### Conclusion
 
 As you can see this is a fairly simple process, but extremely valuable to you as a software engineer. Incorporating this methodology
 in your future applications will return substantial results. It gives you a much more comprehensive understanding of your problem, safeguards your

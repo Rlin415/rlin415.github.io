@@ -11,15 +11,15 @@ out there. I'm going to write about two basic, but principal ones here: stacks a
 
 A stack is a data structure that can be implemented with an array or hash object. Implementing it with an
 array would be at the cost of O(n) time lookup for data in the stack. For that reason, we should always try
-to use hash objects when capable which reduces lookup time to O(1). Stack has two main methods: pop and
-push. Pop removes the last element in it's storage while push adds an element to the end of it's storage.
-This is also where Stack differentiates itself in. It is a last in, first out process.
+to use hash objects when possible because it the reduces lookup time to O(1). Stack has two main methods: pop and
+push. Pop removes the last element in it's storage, while push adds an element to the end of it's storage.
+This is also where stack differentiates itself in. It is a last in, first out process.
 
 ![alt text](http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/200px-Data_stack.svg.png "Logo Title Text 1")
 
 A good example of when we could use this type of data structure is while implementing a browser's back button. Every time
-we go to a new webpage on the same tab, we "push" the previous webpage to a stack so that when users click the back
-button we can "pop" it out and switch our browser's view to that previous webpage.
+we go to a new webpage on the same tab, we "push" the previous webpage to a stack. When a user clicks the back
+button, we can "pop" it out and switch our browser's view to that previous webpage.
 
 ### Queue
 
@@ -34,7 +34,7 @@ stack. It is a first in, first out process.
 A good example of when you might use a queue is while implementing a media player. When a user clicks on a song in the media player
 you would want that media player to "enqueue" that song to the queue so that it becomes the first song in line to play.
 We want all previous songs the user clicked on to play AFTER the song that was most recently clicked on by the user.
-That's why we want to add things to the front of the data structure instead of the back like in a stack.
+That's why we want to add things to the front of the data structure instead of the back like we would in a stack.
 After the song in the front of the line is finished playing, we want to "dequeue" it out of the queue so the song after
 it plays.
 
