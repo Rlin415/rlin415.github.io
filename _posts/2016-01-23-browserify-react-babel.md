@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Browserify with React and Babel
+title: React, Babel, and Browserify
 ---
 
 If you're familiar with React you should know that it's all about building reusable user interface components.
