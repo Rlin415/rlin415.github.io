@@ -3,15 +3,14 @@ layout: post
 title: Event Delegation
 ---
 
-Event delegation is an important methodology in JavaScript. Have you ever found yourself manually reapplying event listeners and handlers to an element because it was dynamically created? Well, event delegation simplifies that process
-by the use of event bubbling. It allows you to add an event listener to a parent element which will fire off for all it's descendants.
+Event delegation is an important methodology in JavaScript. Have you ever found yourself reapplying event listeners and handlers to an element because it was dynamically created? Well, event delegation fixes that problem
+by the use of event bubbling. It allows you to add an event listener to a parent element which will fire off for all its descendants.
 
 ### How it works
 
-Let's say we have a UL element with several LI elements. The basic HTML structure looking like this:
+Let's say we have an UL element with several LI elements. The basic HTML structure looking like this:
 
 ```
-
 <ul id='list'>
   <li>apples</li>
   <li>bannas</li>
@@ -20,7 +19,7 @@ Let's say we have a UL element with several LI elements. The basic HTML structur
 </ul>
 ```
 
-If we wanted to pop up an alert box each time a LI element is clicked, we could attach a click event listener to each individual one. The problem with this approach, however, is that if we dynamically add new LI elements, those new elements would not receive the click event. However, if we add the event listener to the UL element instead:
+If we wanted to pop up an alert box each time a LI element is clicked, we could attach a click event listener to each individual one. The problem with this approach, however, is that if we dynamically add new LI elements, those new elements would not receive the click event listener. However, if we add the click event listener to the UL element instead:
 
 ```
 <ul id='list' onclick=alert(event.type + '!')>
