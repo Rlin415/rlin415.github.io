@@ -4,10 +4,10 @@ title: React, Babel, and Browserify
 ---
 
 If you're familiar with React you should know that it's all about building reusable user interface components.
-To make this process easier, the React team created something called JSX which is a Javascript syntax extension
+To make this process easier, the React team created something called JSX which is a JavaScript syntax extension
 that looks similar to XML. This allows for easier readability and understanding especially because of the balanced
 opening and closing tags. To use this feature however, you need a tool called Babel, which transforms the JSX
-syntax back to plain old Javascript your browser can run. Without Babel, the browser will not understand what
+syntax back to plain old JavaScript your browser can run. Without Babel, the browser will not understand what
 the JSX syntax is and end up crashing your program.
 
 Since we're building multiple components we want to keep our code modular. But, how do we do that on the frontend?
